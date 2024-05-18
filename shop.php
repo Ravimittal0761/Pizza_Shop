@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Shop</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2; /* Changed the background color */
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+    .topnav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+    .topnav a {
+      padding: 14px 20px;
+      background-color: white;
+      color: #4CAF50;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .topnav a:hover {
+      background-color: #45a049;
+    }
+    .topnav input[type="text"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    main {
+      padding: 20px;
+    }
+    h2 {
+      background-color: #4CAF50;
+      padding: 15px 0;
+      text-align: center;
+      color: white;
+      border-radius:10px;
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-top: 30px;
+    }
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .image-container {
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: 80%;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      font-size: 18px;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      border: ;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+   
+    <h1>Pizza Shop</h1>
+  
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">Delivery </a>
+      <a href="#contact"> Takeaway</a>
+      <a href="#contact"> Dine-in</a>
+      <a href="#contact"> Delivery to train</a>
+      <input type="text" placeholder="Search..">
+    </div>
+  </header>
+  <main>
+    <h2>Menu</h2>
+    <div class='image-row'>
+      <div class ='image-container'>
+        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlfSFTouOcb91y8lKkipXYl0-Y1mvTQDISxQ&usqp=CAU' alt='Pizza Image'>
+  
+        <button type='button' onclick='addToDashboard("Special Pizza", 400)'>Special Pizza - 400/small</button>
+        <button type='button'>200/small</button>
+      </div>
+      <div class ='image-container'>
+        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo0CjivpzFTeCu-QOPt2k_MvQjPQaeLJO3eA&usqp=CAU' alt='Pizza Image'>
+        <button type='button' onclick='addToDashboard("Special Pizza", 400)'>Special Pizza - 400/small</button>
+        <button type='button'>200/small</button>
+      </div>
+      <div class ='image-container'>
+        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8nqmxz5SkkjrWVOlkp_EzhDJiY6QTxR8sCg&usqp=CAU' alt='Pizza Image'>
+        <button type='button' onclick='addToDashboard("Special Pizza", 400)'>Special Pizza - 400/small</button>
+        <button type='button'>300/small</button>
+      </div>
+    </div>
+    <h2>Specialty Pizzas</h2>
+    <div class='image-row'>
+      <div class ='image-container'>
+        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPNeLq9dd3IqKPWv4K1IYU4c7SPGeB7ITdHg&usqp=CAU' alt='Pizza Image'>
+        <button type='button' onclick='addToDashboard("Special Pizza", 400)'>Special Pizza - 400/small</button>
+        <button type='button'>300/small</button>
+      </div>
+      <div class ='image-container'>
+      <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdjxohTSVQ4KgiYHWWKZtKq444EXFORFRg-w&usqp=CAU' alt='Pizza Image'>
+      <button type='button' onclick='addToDashboard("Special Pizza", 400)'>Special Pizza - 400/small</button>
+      <button type='button'>400/small</button>
+    </div>
+    <div class ='image-container'>
+    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzmfEcFLbFeP60br-oRWIvOGV7v_2KDoFBw&usqp=CAU' alt='Pizza Image'>
+    <button type='button' onclick='addToDashboard("Special Pizza", 400)'>Special Pizza - 400/small</button>
+    <button type='button'>400/small</button>
+  </div>
+    </div>
+    <h2>Specialty Pizzas</h2>
+    <div class='image-row'>
+      <div class ='image-container'>
+        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKD4sB3jjTzB2o_88b7XcBTWSmDCzca2WezA&usqp=CAU' alt='Pizza Image'>
+        <button type='button' onclick='addToDashboard("Special Pizza", 400)'>Special Pizza - 400/small</button>
+        <button type='button'>400/small</button>
+      </div>
+      <div class ='image-container'>
+      <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdjxohTSVQ4KgiYHWWKZtKq444EXFORFRg-w&usqp=CAU' alt='Pizza Image'>
+      <button type='button'>Special Pizza</button>
+    </div> <button type='button' onclick='addToDashboard("Special Pizza", 400)'>Special Pizza - 400/small</button>
+    <div class ='image-container'>
+    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlfSFTouOcb91y8lKkipXYl0-Y1mvTQDISxQ&usqp=CAU' alt='Pizza Image'>
+    <button type='button' onclick='addToDashboard("Special Pizza", 400)'>Special Pizza - 400/small</button>
+    <button type='button'>400/small</button>
+  </div>
+    </div>
+    <h2>Specialty Pizzas</h2>
+    <div class='image-row'>
+      <div class ='image-container'>
+        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKD4sB3jjTzB2o_88b7XcBTWSmDCzca2WezA&usqp=CAU' alt='Pizza Image'>
+        <button type='button'>Special Pizza</button>
+        <button type='button' onclick='addToDashboard("Special Pizza", 400)'>Special Pizza - 400/small</button>
+      </div>
+      <div class ='image-container'>
+      <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdjxohTSVQ4KgiYHWWKZtKq444EXFORFRg-w&usqp=CAU' alt='Pizza Image'>
+      <button type='button'>Special Pizza</button>
+      <button type='button' onclick='addToDashboard("Special Pizza", 400)'>Special Pizza - 400/small</button>
+    </div>
+    <div class ='image-container'>
+    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlfSFTouOcb91y8lKkipXYl0-Y1mvTQDISxQ&usqp=CAU' alt='Pizza Image'>
+    <button type='button'>Special Pizza</button>
+    <button type='button' onclick='addToDashboard("Special Pizza", 400)'>Special Pizza - 400/small</button>
+  </div>
+    </div>
+    <h2>Specialty Pizzas</h2>
+    <div class='image-row'>
+      <div class ='image-container'>
+        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKD4sB3jjTzB2o_88b7XcBTWSmDCzca2WezA&usqp=CAU' alt='Pizza Image'>
+  
+        <button type='button' onclick='addToDashboard("Special Pizza", 400)'>Special Pizza - 400/small</button>
+      </div>
+      <div class ='image-container'>
+      <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdjxohTSVQ4KgiYHWWKZtKq444EXFORFRg-w&usqp=CAU' alt='Pizza Image'>
+  
+      <button type='button' onclick='addToDashboard("Special Pizza", 400)'>Special Pizza - 400/small</button>
+    </div>
+    <div class ='image-container'>
+    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlfSFTouOcb91y8lKkipXYl0-Y1mvTQDISxQ&usqp=CAU' alt='Pizza Image'>
+
+    <button type='button' onclick='addToDashboard("Special Pizza", 400)'>Special Pizza - 400/small</button>
+  </div>
+    </div>
+    <h2>Menu</h2>
+    <div class='image-row'>
+      <div class ='image-container'>
+        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlfSFTouOcb91y8lKkipXYl0-Y1mvTQDISxQ&usqp=CAU' alt='Pizza Image'>
+        <button type='button' onclick='addToDashboard("Special Pizza", 400)'>Cheese Veg Pizzas - 400/small</button>
+        <button type='button'>200/small</button>
+      </div>
+      <div class ='image-container'>
+        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo0CjivpzFTeCu-QOPt2k_MvQjPQaeLJO3eA&usqp=CAU' alt='Pizza Image'>
+        <button type='button' onclick='addToDashboard("Special Pizza", 400)'>Special Pizza - 400/small</button>
+        <button type='button'>200/small</button>
+      </div>
+      <div class ='image-container'>
+        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8nqmxz5SkkjrWVOlkp_EzhDJiY6QTxR8sCg&usqp=CAU' alt='Pizza Image'>
+        <button type='button' onclick='addToDashboard("Special Pizza", 400)'>Special Pizza - 400/small</button>
+        <button type='button'>300/small</button>
+      </div>
+    </div>
+    <div id="dashboard">
+      <h2>Order Summary</h2>
+      <ul id="order-list"></ul>
+      <h3>Total: ₹<span id="total-price">0</span></h3>
+    </div>
+    <script>
+    let total = 0;
+
+    function addToDashboard(pizza, price) {
+      const orderList = document.getElementById('order-list');
+      const totalPriceElement = document.getElementById('total-price');
+      const newOrder = document.createElement('li');
+      newOrder.textContent = `${pizza} - ₹${price}`;
+      orderList.appendChild(newOrder);
+
+      total += price;
+      totalPriceElement.textContent = total;
+
+      document.getElementById('dashboard').style.display = 'block';
+    }
+  </script>
